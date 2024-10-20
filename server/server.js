@@ -13,6 +13,7 @@ await connectDB();
 app.use(express.json());
 app.use(cors());
 // App Routes
-app.get("/", (res, req) => res.send("API is Wrking"));
+app.get("/", (req, res) => res.send("API is Wrking"));
 
 app.listen(PORT, () => console.log("Server is  on Port " + PORT));
+
